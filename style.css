@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    width: 100%;
+    padding: 10px 2% 10px 2%;
+}
+
+header div.logo {
+    width: 84px;
+    height: 84px;
+    background-color: transparent;
+    background-image: url("imagens/neto-o-dev-logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-left: 30px;
+}
+
+
+header nav ul{
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    list-style-position: inside;
+    top: 40px;
+    right: 30px;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+header nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #8D69BF;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #8d69bfd2;
+    transform: 0.5s ease-in-out;
+}
+
+header nav ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #8d69bf98;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+section#home {
+    width: 100%;
+    height: 80vh;
+    padding: 30px 2% 0 2%;
+}
+
+.section-container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.home-wrapper-1 {
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+}
+
+.home-wrapper-2 {
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    top: -120px;
+    left: 0;
+}
+
+.section-container div.profile-img {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    border-radius: 200px;
+    background-color: rgb(214, 214, 214);
+    background-image: url("imagens/profile-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-container div.texto {
+    width: 500px;
+    height: 300px;
+    text-align: right;
+    
+}
+
+.section-container div.texto h1 {
+    font-size: 50px;
+    color: #8D69BF;
+    font-weight: 800;
+}
+
+.section-container div.texto p{
+    font-size: 30px;
+    color: #351B59;
+    font-weight: 600;
+}
+
+.section-container div.btn-links {
+    width: 230px;
+    text-align: center;
+    float: right;
+    position: relative;
+    bottom: 200px;
+    right: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-container div.btn-links a.cv {
+    text-decoration: none;
+    background-color: #8D69BF;
+    color: #fafafa;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 8px;
+    border-radius: 25px;
+    position: relative;
+    top: -3px;
+    transition: 0.5s;
+}
+
+.section-container div.btn-links a.cv:hover {
+    background-color: #fafafa;
+    color: #8D69BF;
+    border: 0.5px solid #8D69BF;
+}
+
+.section-container .seta-home {
+    float: right;
+    position: relative;
+    top: -60px;
+    right: -200px;
+}
+
+
+section#sobre {
+    width: 100%;
+    height: 110vh;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section#sobre div.sobre-container, section#skills div.skills-container, section#projetos div.projetos-container, section#contato div.contato-container {
+    width: 96%;
+}
+
+section#sobre div.sobre-container p, section#skills div.skills-container p, section#projetos div.projetos-container p, section#contato div.contato-container p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #351B59;
+}
+
+section#sobre div.sobre-container h2, section#skills div.skills-container h2, section#projetos div.projetos-container h2, section#contato div.contato-container h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #8D69BF;
+}
+
+/** mosaico **/
+
+.mosaico-single {
+    float: left;
+    width: calc(100% / 12);
+}
+
+.img-mosaico-single {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/******/
+
+section#sobre div.sobre-texto-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section#sobre div.sobre-texto {
+    width: 500px;
+    padding: 30px;
+    color: #351B59;
+    text-align: left;
+    float: left;
+    top: 0;
+    position: relative;
+}
+
+section#sobre div.sobre-texto2 {
+    width: 500px;
+    padding: 30px;
+    color: #351B59;
+    text-align: right;
+    float: right;
+    position: relative;
+    top: 100px;
+}
+
+section#sobre div.sobre-texto3 {
+    width: 580px;
+    padding: 30px;
+    color: #351B59;
+    text-align: left;
+    float: left;
+    top: 80px;
+    position: relative;
+}
+
+section#sobre div.seta-sobre {
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+
+section#skills {
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section#skills div.hard-skills {
+    border: 1px solid #8D69BF;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 600px;
+    height: 420px;
+    float: left;
+    position: relative;
+    left: 30px;
+}
+
+section#skills div.hard-skills h3 {
+    font-size: 24px;
+    color: #8D69BF;
+    font-weight: 600;
+}
+
+section#skills div.hard-skills h4 {
+    font-size: 18px;
+    color: #351B59;
+    font-weight: 500;
+}
+
+section#skills div.hard-skills p {
+    font-size: 16px;
+    color: #8D69BF;
+}
+
+section#skills div.hard-skills-wrapper1 {
+    float: left;
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    left: 100px;
+}
+
+section#skills div.hard-skills-wrapper2 {
+    float: right;
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    right: 100px;
+}
+
+section#skills div.hard-skills article img {
+    position: relative;
+    top: 30px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+}
+
+/****/
+
+section#skills div.soft-skills {
+    border: 1px solid #8D69BF;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 600px;
+    height: 420px;
+    float: right;
+    position: relative;
+    right: 30px;
+}
+
+section#skills div.soft-skills h3 {
+    font-size: 24px;
+    color: #8D69BF;
+    font-weight: 600;
+}
+
+section#skills div.soft-skills h4 {
+    font-size: 18px;
+    color: #351B59;
+    font-weight: 500;
+}
+
+section#skills div.soft-skills p {
+    font-size: 16px;
+    color: #8D69BF;
+}
+
+section#skills div.soft-skills-wrapper1 {
+    float: left;
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    left: 30px;
+}
+
+section#skills div.soft-skills-wrapper2 {
+    float: right;
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    right: 30px;
+}
+
+section#skills div.soft-skills article img {
+    position: relative;
+    top: 30px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+}
+
+section#skills div.seta-skills {
+    float: right;
+    position: relative;
+    top: 420px;
+    right: -260px;
+}
+
+section#projetos {
+    width: 100%;
+    height: 150vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section#projetos div.projeto-single {
+    width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+section#projetos div.projeto-single img {
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 20px gray;
+    transition: 0.5s;
+    cursor: not-allowed;
+}
+
+section#projetos div.projeto-single img:hover {
+    width: 550px;
+}
+
+section#projetos div.projeto-single h3 {
+    font-size: 24px;
+    color: #351B59;
+    font-weight: 400;
+}
+
+section#projetos div.projetos-links {
+    margin-top: 20px;
+}
+
+section#projetos div.projeto-single .github-link {
+    text-decoration: none;
+    background-color: #8D69BF;
+    color: #fafafa;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 8px;
+    border-radius: 17px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+section#projetos div.projeto-single .github-link:hover {
+    color: #8D69BF;
+    background-color: #fafafa;
+    border: 0.5px solid #8D69BF;
+}
+
+section#projetos div.projeto-single .live-demo-link {
+    text-decoration: none;
+    background-color: #351B59;
+    color: #fafafa;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 8px;
+    border-radius: 17px;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+section#projetos div.projeto-single .live-demo-link:hover {
+    background-color: #fafafa;
+    color: #351B59;
+    border: 0.5px solid #351B59;
+}
+
+section#projetos div.seta-projetos {
+    float: right;
+    position: relative;
+    top: 380px;
+    right: 30px;
+}
+
+section#contato {
+    width: 100%;
+    height: 70vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #e7e7e7;
+}
+
+section#contato .contato-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#contato .contato-btn a {
+    text-decoration: none;
+    color: #8D69BF;
+}
+
+section#contato .contato-btn a:hover {
+    text-decoration: underline;
+}
+
+section#contato .contato-btn a p {
+    color: #8D69BF;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+nav.end ul {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    list-style-position: inside;
+    justify-content: center;
+}
+
+nav.end ul li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav.end ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #8D69BF;
+    font-weight: 500;
+}
+
+nav.end ul li a:hover {
+    color: #8d69bfd2;
+    transform: 0.5s ease-in-out;
+}
+
+nav.end ul li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #8d69bf98;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+
+nav.end ul li a:hover::after {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #351B59;
+    color: #d9d2e4;
+}
+
+footer div {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #d9d2e4;
+}
+
+footer div a {
+    color: #8D69BF;
+    text-decoration: none;
+}
