@@ -21,6 +21,16 @@ header {
     padding: 10px 2% 10px 2%;
 }
 
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
 header div.logo {
     width: 84px;
     height: 84px;
@@ -29,20 +39,14 @@ header div.logo {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    float: left;
-    margin-left: 30px;
 }
 
 
 header nav ul{
-    position: relative;
-    float: right;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     list-style-position: inside;
-    top: 40px;
-    right: 30px;
 }
 
 header nav ul li {
@@ -80,33 +84,35 @@ header nav ul li a:hover::after {
 
 section#home {
     width: 100%;
-    height: 80vh;
-    padding: 30px 2% 0 2%;
+    margin: 35px 0;
+    padding: 0 2%;
 }
 
-.section-container {
-    width: 100%;
+.container-home {
+    width: 90%;
+    margin: 0;
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.home-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .home-wrapper-1 {
-    width: 48%;
-    display: inline-block;
-    text-align: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home-wrapper-2 {
-    width: 48%;
-    display: inline-block;
-    position: relative;
-    top: -120px;
-    left: 0;
-}
-
-.section-container div.profile-img {
+.container-home .home-wrapper-1 div.profile-img {
     width: 350px;
     height: 350px;
-    display: inline-block;
     border-radius: 200px;
     background-color: rgb(214, 214, 214);
     background-image: url("imagens/profile-pic.jpg");
@@ -115,72 +121,88 @@ section#home {
     background-position: center;
 }
 
-.section-container div.texto {
-    width: 500px;
-    height: 300px;
-    text-align: right;
-    
+.home-wrapper-2 {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-.section-container div.texto h1 {
+
+.container-home div.texto {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-home div.texto h1 {
     font-size: 50px;
     color: #8D69BF;
     font-weight: 800;
 }
 
-.section-container div.texto p{
+.container-home div.texto p{
     font-size: 30px;
     color: #351B59;
     font-weight: 600;
 }
 
-.section-container div.btn-links {
-    width: 230px;
-    text-align: center;
-    float: right;
+
+.container-home div.btn-links-wrapper {
+    width: 100%;
     position: relative;
-    bottom: 200px;
-    right: 165px;
+    top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.container-home div.btn-links {
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.section-container div.btn-links a.cv {
+.container-home div.btn-links a.cv {
     text-decoration: none;
     background-color: #8D69BF;
     color: #fafafa;
     font-size: 15px;
     font-weight: 300;
     padding: 8px;
+    border: 0.5px solid #fafafa;
     border-radius: 25px;
-    position: relative;
-    top: -3px;
     transition: 0.5s;
 }
 
-.section-container div.btn-links a.cv:hover {
+.container-home div.btn-links a.cv:hover {
     background-color: #fafafa;
     color: #8D69BF;
     border: 0.5px solid #8D69BF;
 }
 
-.section-container .seta-home {
-    float: right;
+.seta-home {
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: right;
     position: relative;
-    top: -60px;
-    right: -200px;
+    bottom: 0;
+    right: 0;
 }
 
 
 section#sobre {
     width: 100%;
-    height: 110vh;
+    height: 80vh;
     padding-top: 15px;
     display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 section#sobre div.sobre-container, section#skills div.skills-container, section#projetos div.projetos-container, section#contato div.contato-container {
@@ -254,10 +276,13 @@ section#sobre div.sobre-texto3 {
 }
 
 section#sobre div.seta-sobre {
-    float: right;
-    position: relative;
-    top: 10px;
-    right: 30px;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 section#skills {

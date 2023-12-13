@@ -12,10 +12,9 @@
 
 </head>
 <body>
-    <section id="home">
-        <header>
+    <header>
+        <div class="container">
             <div class="logo"></div>
-    
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre mim</a></li>
@@ -24,48 +23,48 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+        </div>
+    </header>
     
-            <div class="clear"></div>
-        </header>
-
-        <div class="section-container">
-            <div class="home-wrapper-1">
-                <div class="profile-img"></div>
-            </div>
-            <div class="home-wrapper-2">
-                <div class="texto">
-                    <h1>Olá, Mundo!</h1>
-                    <p>Sou Neto,</p>
-                    <p class="animacao"></p>
+    <section id="home">
+        <div class="container-home">
+            <div class="home-wrapper">
+                <div class="home-wrapper-1">
+                    <div class="profile-img"></div>
+                </div>
+                <div class="home-wrapper-2">
+                    <div class="texto">
+                        <h1>Olá, Mundo!</h1>
+                        <p>Sou Neto,</p>
+                        <p class="animacao"></p>
+                    </div>
                 </div>
             </div>
 
-            <div class="clear"></div>
+            <div class="btn-links-wrapper">
+                <div class="btn-links">
+                    <a class="cv" href="arquivos/neto-cv.pdf" target="_blank">Baixar CV</a>
+                    <a href="https://www.github.com/netoodev" target="_blank"><img width="32px" src="imagens/github-logo.png" alt="Logo Github"></a>
+                    <a href="https://linkedin.com/in/netoodev" target="_blank"><img width="32px" src="imagens/linkedin-sign.png" alt=""></a>
+                </div><!--btn-links-->
+            </div>
 
-            <div class="btn-links">
-
-                <a class="cv" href="arquivos/neto-cv.pdf" target="_blank">Baixar CV</a>
-                <a href="https://www.github.com/netoodev" target="_blank"><img width="32px" src="imagens/github-logo.png" alt="Logo Github"></a>
-                <a href="https://linkedin.com/in/netoodev" target="_blank"><img width="32px" src="imagens/linkedin-sign.png" alt=""></a>
-
-                <div class="clear"></div>
-            </div><!--btn-links-->
-            
-            <div class="seta-home"><a href="#sobre"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
-            <div class="clear"></div>
         </div>
+
+        <div class="seta-home"><a href="#sobre"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
 
     </section><!--section-home-->
 
     <section id="sobre">
         <div class="sobre-container">
+
             <div class="sobre-titulo">
                 <p>Um pouco</p>
                 <h2>Sobre mim</h2>
             </div>
 
             <section class="mosaico">
-                <div class="container">
+                <div class="container-mosaico">
         
                     <div class="mosaico-wrapper">
                         <div class="mosaico-single">
@@ -138,9 +137,8 @@
             </div>
             <div class="clear"></div>
 
-            <div class="seta-sobre"><a href="#skills"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
-            <div class="clear"></div>
         </div><!--sobre-container-->
+        <div class="seta-sobre"><a href="#skills"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
     </section><!--section-sobre-->
 
     <section id="skills">
