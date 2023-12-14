@@ -193,6 +193,34 @@ section#home {
     border: 0.5px solid #8D69BF;
 }
 
+.container-home div.btn-links .github-link-img {
+    width: 45px;
+    height: 45px;
+    background-image: url('imagens/github-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.container-home div.btn-links .github-link-img:hover {
+    background-image: url('imagens/github-logo-hover.png');
+}
+
+.container-home div.btn-links .linkedin-link-img {
+    width: 45px;
+    height: 45px;
+    background-image: url('imagens/linkedin-sign.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.container-home div.btn-links .linkedin-link-img:hover {
+    background-image: url('imagens/linkedin-sign-hover.png');
+}
+
 .seta-home {
     width: 100%;
     padding: 0 2%;
@@ -550,7 +578,7 @@ section#contato .contato-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 section#contato .contato-btn a {
