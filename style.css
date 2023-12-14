@@ -316,69 +316,109 @@ section#sobre div.seta-sobre {
 
 section#skills {
     width: 100%;
-    height: 100vh;
-    padding-top: 20px;
+    height: 70%;
+    padding: 0 2%;
     display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
-section#skills div.hard-skills {
+section#skills div.skills-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+section#skills div.skills-blocks-container {
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#skills div.hard-skills, section#skills div.soft-skills {
     border: 1px solid #8D69BF;
     border-radius: 20px;
     padding: 10px;
-    margin-top: 20px;
-    width: 600px;
-    height: 420px;
-    float: left;
-    position: relative;
-    left: 30px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-section#skills div.hard-skills h3 {
+section#skills div.skills-details{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#skills div.hard-skills h3, section#skills div.soft-skills h3 {
     font-size: 24px;
     color: #8D69BF;
     font-weight: 600;
+    display: inline;
 }
 
-section#skills div.hard-skills h4 {
+section#skills div.hard-skills h4, section#skills div.soft-skills h4 {
     font-size: 18px;
     color: #351B59;
     font-weight: 500;
 }
 
-section#skills div.hard-skills p {
+section#skills div.hard-skills p, section#skills div.soft-skills p {
     font-size: 16px;
     color: #8D69BF;
 }
 
-section#skills div.hard-skills-wrapper1 {
-    float: left;
-    text-align: left;
-    padding: 30px;
-    position: relative;
-    left: 100px;
+section#skills div.hard-skills-container, section#skills div.soft-skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
-section#skills div.hard-skills-wrapper2 {
-    float: right;
+section#skills div.hard-skills-wrapper1, section#skills div.soft-skills-wrapper1, section#skills div.hard-skills-wrapper2, section#skills div.soft-skills-wrapper2 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: left;
     padding: 30px;
-    position: relative;
-    right: 100px;
 }
 
-section#skills div.hard-skills article img {
-    position: relative;
+section#skills div.hard-skills article, section#skills div.soft-skills article {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+}
+
+section#skills div.hard-skills div, section#skills div.soft-skills div {
+    padding-left: 15px;
+}
+
+section#skills div.hard-skills article img, section#skills div.soft-skills article img {
+    width: 27px;
+    height: 27px;
+    /* position: relative;
     top: 30px;
     right: 40px;
     width: 20px;
-    height: 20px;
+    height: 20px; */
 }
 
 /****/
 
-section#skills div.soft-skills {
+/* section#skills div.soft-skills {
     border: 1px solid #8D69BF;
     border-radius: 20px;
     padding: 10px;
@@ -429,13 +469,16 @@ section#skills div.soft-skills article img {
     right: 40px;
     width: 20px;
     height: 20px;
-}
+} */
 
 section#skills div.seta-skills {
-    float: right;
-    position: relative;
-    top: 420px;
-    right: -260px;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 section#projetos {
