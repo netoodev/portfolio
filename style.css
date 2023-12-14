@@ -84,8 +84,7 @@ header nav ul li a:hover::after {
 
 section#home {
     width: 100%;
-    height: calc(100% - 124px);
-    padding: 0 2%;
+    padding: 60px 2% 30px 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,17 +197,13 @@ section#home {
     width: 100%;
     padding: 0 2%;
     display: flex;
-    justify-content: right;
-    position: relative;
-    bottom: 0;
-    right: 0;
+    justify-content: center;
 }
 
 
 section#sobre {
     width: 100%;
-    height: 100%;
-    padding: 0 2%;
+    padding: 30px 2%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -308,16 +303,12 @@ section#sobre div.seta-sobre {
     width: 100%;
     padding: 0 2%;
     display: flex;
-    justify-content: right;
-    position: absolute;
-    bottom: 55px;
-    right: 0;
+    justify-content: center;
 }
 
 section#skills {
     width: 100%;
-    height: 75%;
-    padding: 0 2%;
+    padding: 30px 2%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -415,16 +406,12 @@ section#skills div.seta-skills {
     width: 100%;
     padding: 0 2%;
     display: flex;
-    justify-content: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    justify-content: center;
 }
 
 section#projetos {
     width: 100%;
-    height: 90%;
-    padding: 0 2%;
+    padding: 30px 2%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -527,16 +514,12 @@ section#projetos div.seta-projetos {
     width: 100%;
     padding: 0 2%;
     display: flex;
-    justify-content: right;
-    position: absolute;
-    bottom: 55px;
-    right: 0;
+    justify-content: center;
 }
 
 section#contato {
     width: 100%;
-    height: 50%;
-    padding: 0 2%;
+    padding: 30px 2%;
     display: flex;
     justify-content: center;
     flex-direction: column;
