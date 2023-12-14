@@ -84,7 +84,8 @@ header nav ul li a:hover::after {
 
 section#home {
     width: 100%;
-    padding: 2.5%;
+    height: calc(100% - 124px);
+    padding: 0 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,11 +176,13 @@ section#home {
 
 .container-home div.btn-links a.cv {
     text-decoration: none;
+    text-align: center;
+    vertical-align: center;
     background-color: #8D69BF;
     color: #fafafa;
     font-size: 15px;
     font-weight: 300;
-    padding: 8px;
+    padding: 10px;
     border: 0.5px solid #fafafa;
     border-radius: 25px;
     transition: 0.5s;
@@ -204,15 +207,21 @@ section#home {
 
 section#sobre {
     width: 100%;
-    padding: 2.5%;
+    height: 100%;
+    padding: 0 2%;
     display: flex;
     justify-content: center;
     text-align: center;
     position: relative;
 }
 
-section#sobre div.sobre-container, section#skills div.skills-container, section#projetos div.projetos-container, section#contato div.contato-container {
-    width: 96%;
+section#sobre div.sobre-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
 section#sobre div.sobre-container p, section#skills div.skills-container p, section#projetos div.projetos-container p, section#contato div.contato-container p {
@@ -229,9 +238,14 @@ section#sobre div.sobre-container h2, section#skills div.skills-container h2, se
 
 /** mosaico **/
 
+.container-mosaico {
+    width: 104%;
+    margin-left: -2.5%;
+}
+
 .mosaico-single {
     float: left;
-    width: calc(100% / 12);
+    width: calc(100% / 9);
 }
 
 .img-mosaico-single {
@@ -247,38 +261,47 @@ section#sobre div.sobre-container h2, section#skills div.skills-container h2, se
 /******/
 
 section#sobre div.sobre-texto-wrapper {
-    width: 80%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 20px auto 0 auto;
 }
 
 section#sobre div.sobre-texto {
-    width: 500px;
-    padding: 30px;
+    width: 100%;
+    padding: 20px 0;
     color: #351B59;
-    text-align: left;
-    float: left;
-    top: 0;
-    position: relative;
+    text-align: justify;
+    display: flex;
+    justify-content: left;
+}
+
+section#sobre div.sobre-texto p {
+    width: 500px;
 }
 
 section#sobre div.sobre-texto2 {
-    width: 500px;
-    padding: 30px;
+    width: 100%;
+    padding: 20px 0;
     color: #351B59;
-    text-align: right;
-    float: right;
-    position: relative;
-    top: 100px;
+    text-align: justify;
+    display: flex;
+    justify-content: right;
+}
+
+section#sobre div.sobre-texto2 p {
+    width: 500px;
 }
 
 section#sobre div.sobre-texto3 {
-    width: 580px;
-    padding: 30px;
+    width: 100%;
+    padding: 20px 0;
     color: #351B59;
-    text-align: left;
-    float: left;
-    top: 80px;
-    position: relative;
+    text-align: justify;
+    display: flex;
+    justify-content: left;
+}
+
+section#sobre div.sobre-texto3 p {
+    width: 500px;
 }
 
 section#sobre div.seta-sobre {
@@ -287,7 +310,7 @@ section#sobre div.seta-sobre {
     display: flex;
     justify-content: right;
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     right: 0;
 }
 
