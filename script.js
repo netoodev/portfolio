@@ -62,7 +62,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('a[href^="#home"]').on('click', function(event) {
+    $('a[href^="#header"]').on('click', function(event) {
         var target = $($(this).attr('href'));
 
         if (target.length) {

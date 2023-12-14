@@ -183,7 +183,7 @@ section#home {
     font-size: 15px;
     font-weight: 300;
     padding: 10px;
-    border: 0.5px solid #fafafa;
+    border: 0.5px solid transparent;
     border-radius: 25px;
     transition: 0.5s;
 }
@@ -224,13 +224,13 @@ section#sobre div.sobre-container {
     position: relative;
 }
 
-section#sobre div.sobre-container p, section#skills div.skills-container p, section#projetos div.projetos-container p, section#contato div.contato-container p {
+section#sobre div.sobre-container p, section#skills div.skills-container p, section#projetos div.projetos-container p, section#contato div.contato-titulo p {
     font-size: 20px;
     font-weight: 400;
     color: #351B59;
 }
 
-section#sobre div.sobre-container h2, section#skills div.skills-container h2, section#projetos div.projetos-container h2, section#contato div.contato-container h2 {
+section#sobre div.sobre-container h2, section#skills div.skills-container h2, section#projetos div.projetos-container h2, section#contato div.contato-titulo h2 {
     font-size: 30px;
     font-weight: 600;
     color: #8D69BF;
@@ -262,7 +262,7 @@ section#sobre div.sobre-container h2, section#skills div.skills-container h2, se
 
 section#sobre div.sobre-texto-wrapper {
     width: 70%;
-    margin: 20px auto 0 auto;
+    margin: 3% auto;
 }
 
 section#sobre div.sobre-texto {
@@ -316,7 +316,7 @@ section#sobre div.seta-sobre {
 
 section#skills {
     width: 100%;
-    height: 70%;
+    height: 75%;
     padding: 0 2%;
     display: flex;
     justify-content: center;
@@ -329,7 +329,7 @@ section#skills div.skills-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    position: relative;
 }
 
 section#skills div.skills-blocks-container {
@@ -409,67 +409,7 @@ section#skills div.hard-skills div, section#skills div.soft-skills div {
 section#skills div.hard-skills article img, section#skills div.soft-skills article img {
     width: 27px;
     height: 27px;
-    /* position: relative;
-    top: 30px;
-    right: 40px;
-    width: 20px;
-    height: 20px; */
 }
-
-/****/
-
-/* section#skills div.soft-skills {
-    border: 1px solid #8D69BF;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 20px;
-    width: 600px;
-    height: 420px;
-    float: right;
-    position: relative;
-    right: 30px;
-}
-
-section#skills div.soft-skills h3 {
-    font-size: 24px;
-    color: #8D69BF;
-    font-weight: 600;
-}
-
-section#skills div.soft-skills h4 {
-    font-size: 18px;
-    color: #351B59;
-    font-weight: 500;
-}
-
-section#skills div.soft-skills p {
-    font-size: 16px;
-    color: #8D69BF;
-}
-
-section#skills div.soft-skills-wrapper1 {
-    float: left;
-    text-align: left;
-    padding: 30px;
-    position: relative;
-    left: 30px;
-}
-
-section#skills div.soft-skills-wrapper2 {
-    float: right;
-    text-align: left;
-    padding: 30px;
-    position: relative;
-    right: 30px;
-}
-
-section#skills div.soft-skills article img {
-    position: relative;
-    top: 30px;
-    right: 40px;
-    width: 20px;
-    height: 20px;
-} */
 
 section#skills div.seta-skills {
     width: 100%;
@@ -483,34 +423,56 @@ section#skills div.seta-skills {
 
 section#projetos {
     width: 100%;
-    height: 150vh;
-    padding-top: 20px;
+    height: 90%;
+    padding: 0 2%;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 40px;
+    position: relative;
+}
+
+section#projetos .projetos-container {
+    width: 100%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+section#projetos .projetos-wrapper {
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 section#projetos div.projeto-single {
-    width: 600px;
+    width: calc(90% / 3);
     margin: 30px auto;
-    padding: 10px;
+    padding: 10px 2%;
     border-radius: 20px;
     display: inline-block;
 }
 
 section#projetos div.projeto-single img {
-    width: 500px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0px 7px 20px gray;
     transition: 0.5s;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
-section#projetos div.projeto-single img:hover {
-    width: 550px;
+section#projetos div.projeto-img-container {
+    width: 100%;
+}
+
+section#projetos div.projeto-img-container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 section#projetos div.projeto-single h3 {
@@ -530,9 +492,10 @@ section#projetos div.projeto-single .github-link {
     font-size: 15px;
     font-weight: 300;
     padding: 8px;
-    border-radius: 17px;
+    border-radius: 23px;
     transition: 0.5s;
     margin: 10px;
+    border: 0.5px solid transparent;
 }
 
 section#projetos div.projeto-single .github-link:hover {
@@ -548,9 +511,10 @@ section#projetos div.projeto-single .live-demo-link {
     font-size: 15px;
     font-weight: 300;
     padding: 8px;
-    border-radius: 17px;
+    border-radius: 23px;
     transition: 0.5s;
     margin: 10px;
+    border: 0.5px solid transparent;
 }
 
 section#projetos div.projeto-single .live-demo-link:hover {
@@ -560,27 +524,50 @@ section#projetos div.projeto-single .live-demo-link:hover {
 }
 
 section#projetos div.seta-projetos {
-    float: right;
-    position: relative;
-    top: 380px;
-    right: 30px;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    bottom: 55px;
+    right: 0;
 }
 
 section#contato {
     width: 100%;
-    height: 70vh;
-    padding-top: 20px;
+    height: 50%;
+    padding: 0 2%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
+    position: relative;
     background-color: #e7e7e7;
 }
 
+
+section#contato .contato-titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section#contato .contato-container {
+    width: 100%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 section#contato .contato-btn {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px 0;
 }
 
 section#contato .contato-btn a {

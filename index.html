@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <div class="logo"></div>
             <nav>
@@ -123,6 +123,7 @@
                 </div>
                 
                 <div class="seta-sobre"><a href="#skills"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
+            </div>
 
         </div><!--sobre-container-->
 
@@ -174,7 +175,7 @@
                                 <article>
                                     <img src="imagens/verify.png" alt="Ícone Check">
                                     <div>
-                                        <h4>C</h4>
+                                        <h4>.NET</h4>
                                         <p>Básico</p>
                                     </div>
                                 </article>
@@ -182,7 +183,7 @@
                                     <img src="imagens/verify.png" alt="Ícone Check">
                                     <div>
                                         <h4>Git</h4>
-                                        <p>Básico</p>
+                                        <p>Intermediário</p>
                                     </div>
                                 </article>
                                 <article>
@@ -196,7 +197,7 @@
                                     <img src="imagens/verify.png" alt="Ícone Check">
                                     <div>
                                         <h4>Inglês</h4>
-                                        <p>Avançado</p>
+                                        <p>Intermediário</p>
                                     </div>
                                 </article>
                             </div><!--hard-skills-wrapper2-->
@@ -269,9 +270,9 @@
                             </div><!--soft-skills-wrapper2-->
                         </div>
                     </div>
-                    <div class="seta-skills"><a href="#projetos"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
                 </div><!--soft-skills-->
             </div><!--skills-blocks-container-->
+            <div class="seta-skills"><a href="#projetos"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
         </div>
     </section>
 
@@ -281,71 +282,73 @@
                 <p>Meus</p>
                 <h2>Projetos</h2>
             </div>
-
-            <div class="projeto-single">
-                <img src="imagens/starbuck-landing-page.png" alt="Starbucks Landing Page">
-                <h3>Starbucks</h3>
-                <div class="projetos-links">
-                    <a class="github-link" href="https://github.com/netoodev/starbucks-projeto" target="_blank">Github</a>
-                    <a class="live-demo-link" href="https://netoodev.github.io/starbucks-projeto/" target="_blank">Live Demo</a>
-                </div>
-            </div><!--projeto-single-->
-
-            <div class="projeto-single">
-                <img src="imagens/landing-page-danki-code.png" alt="Danki Code Landing Page">
-                <h3>Projeto Landing Page</h3>
-                <div class="projetos-links">
-                    <a class="github-link" href="https://github.com/netoodev/landing-page-projeto" target="_blank">Github</a>
-                    <a class="live-demo-link" href="https://netoodev.github.io/landing-page-projeto/" target="_blank">Live Demo</a>
-                </div>
-            </div><!--projeto-single-->
-
-            <div class="clear"></div>
-
-            <div class="projeto-single">
-                <img src="imagens/clone-instagram.png" alt="Instagram Clone">
-                <h3>Clone Instagram</h3>
-                <div class="projetos-links">
-                    <a class="github-link" href="https://github.com/netoodev/myInstagram-clone" target="_blank">Github</a>
-                    <a class="live-demo-link" href="https://netoodev.github.io/myInstagram-clone/" target="_blank">Live Demo</a>
-                </div>
-            </div><!--projeto-single-->
+            <div class="projetos-wrapper">
+                <div class="projeto-single">
+                    <div class="projeto-img-container">
+                        <a href="https://netoodev.github.io/starbucks-projeto/" target="_blank"><img src="imagens/starbuck-landing-page.png" alt="Starbucks Landing Page"></a>
+                    </div>
+                    <h3>Starbucks</h3>
+                    <div class="projetos-links">
+                        <a class="github-link" href="https://github.com/netoodev/starbucks-projeto" target="_blank">Github</a>
+                        <a class="live-demo-link" href="https://netoodev.github.io/starbucks-projeto/" target="_blank">Visualizar</a>
+                    </div>
+                </div><!--projeto-single-->
+                <div class="projeto-single">
+                    <div class="projeto-img-container">
+                        <a href="https://netoodev.github.io/landing-page-projeto/" target="_blank"><img src="imagens/landing-page-danki-code.png" alt="Danki Code Landing Page"></a>
+                    </div>
+                    <h3>Danki Code Landing Page</h3>
+                    <div class="projetos-links">
+                        <a class="github-link" href="https://github.com/netoodev/landing-page-projeto" target="_blank">Github</a>
+                        <a class="live-demo-link" href="https://netoodev.github.io/landing-page-projeto/" target="_blank">Visualizar</a>
+                    </div>
+                </div><!--projeto-single-->
+                <div class="clear"></div>
+                <div class="projeto-single">
+                    <div class="projeto-img-container">
+                        <a href="https://netoodev.github.io/myInstagram-clone/" target="_blank"><img src="imagens/clone-instagram.png" alt="Instagram Clone"></a>
+                    </div>
+                    <h3>Clone Instagram</h3>
+                    <div class="projetos-links">
+                        <a class="github-link" href="https://github.com/netoodev/myInstagram-clone" target="_blank">Github</a>
+                        <a class="live-demo-link" href="https://netoodev.github.io/myInstagram-clone/" target="_blank">Visualizar</a>
+                    </div>
+                </div><!--projeto-single-->
+            </div>
 
             <div class="seta-projetos"><a href="#contato"><img src="imagens/arrow.png" alt="Seta para baixo"></a></div>
-            <div class="clear"></div>
         </div>
     </section><!--section-projetos-->
     
     
     <section id="contato">
-        <div class="contato-container">
             <div class="contato-titulo">
-                <p>Entre em</p>
-                <h2>Contato</h2>
+                <div class="contato-titulo-wrapper">
+                    <p>Entre em</p>
+                    <h2>Contato</h2>
+                </div>
             </div>
-
-            <div class="contato-btn">
-                <a href="mailto:netoodeveloper@gmail.com" target="_blank"><img src="imagens/envelope.png" alt="Logo E-mail"><p>netoodeveloper@gmail.com</p></a>
+            <div class="contato-container">
+                <div class="contato-btn">
+                    <a href="mailto:netoodeveloper@gmail.com" target="_blank"><img src="imagens/envelope.png" alt="Logo E-mail"><p>netoodeveloper@gmail.com</p></a>
+                </div>
+                <div class="contato-btn">
+                    <a href="https://linkedin.com/in/netoodev" target="_blank"><img width="32" src="imagens/linkedin-sign.png" alt="Logo LinkedIn"><p>/netoodev</p></a>
+                </div>
+                <nav class="end">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <div class="contato-btn">
-                <a href="https://linkedin.com/in/netoodev" target="_blank"><img width="32" src="imagens/linkedin-sign.png" alt="Logo LinkedIn"><p>/netoodev</p></a>
-            </div>
-
-            <nav class="end">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
     </section><!--section-contato-->
 
     <footer>
-        <p>Copyright &copy; 2023 José Neto. Todos os direitos reservados.</p>
+        <p>&copy; 2023 José Neto</p>
         <div> Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy" target="_blank"> Dave Gandy </a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com'</a></div>
     </footer>
 </body>
