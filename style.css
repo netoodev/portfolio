@@ -42,31 +42,31 @@ header div.logo {
 }
 
 
-header nav ul{
+header nav.nav-padrao ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
     list-style-position: inside;
 }
 
-header nav ul li {
+header nav.nav-padrao ul li {
     margin-right: 20px;
     font-size: 18px;
 }
 
-header nav ul li a {
+header nav.nav-padrao ul li a {
     position: relative;
     text-decoration: none;
     color: #8D69BF;
     font-weight: 500;
 }
 
-header nav ul li a:hover {
+header nav.nav-padrao ul li a:hover {
     color: #8d69bfd2;
     transform: 0.5s ease-in-out;
 }
 
-header nav ul li a::after {
+header nav.nav-padrao ul li a::after {
     content: " ";
     width: 0%;
     height: 2px;
@@ -78,8 +78,12 @@ header nav ul li a::after {
 }
 
 
-header nav ul li a:hover::after {
+header nav.nav-padrao ul li a:hover::after {
     width: 100%;
+}
+
+.nav-mobile {
+    display: none;
 }
 
 section#home {
@@ -101,7 +105,7 @@ section#home {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    justify-content: center;
 }
 
 .home-wrapper {
@@ -376,7 +380,7 @@ section#skills div.skills-details{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -655,4 +659,194 @@ footer div {
 footer div a {
     color: #8D69BF;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1500px) {
+
+    section#sobre div.sobre-texto, section#sobre div.sobre-texto2, section#sobre div.sobre-texto3 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    section#sobre div.sobre-texto p, section#sobre div.sobre-texto2 p, section#sobre div.sobre-texto3 p {
+        width: 100%;
+    }
+
+    section#sobre div.sobre-texto3 {
+        padding-bottom: 7%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    section#skills div.skills-blocks-container {
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    section#skills div.hard-skills, section#skills div.soft-skills {
+        border: 1px solid #8D69BF;
+        border-radius: 20px;
+        padding: 10px;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section#skills div.hard-skills {
+        margin-bottom: 20px;
+    }
+
+    section#skills div.soft-skills {
+        margin-top: 20px;
+    }
+
+    section#skills div.skills-details{
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    header nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-home .home-wrapper-1 div.profile-img {
+        width: 250px;
+        height: 250px;
+        border-radius: 200px;
+        background-color: rgb(214, 214, 214);
+        background-image: url("imagens/profile-pic.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container-home div.texto {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-home div.btn-links-wrapper {
+        width: 100%;
+        padding: 4%;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-home div.btn-links {
+        width: 30%;
+        margin-left: -48.52px;
+        margin-bottom: 2%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section#projetos .projetos-wrapper {
+        flex-direction: column;
+    }
+
+    section#projetos div.projeto-single {
+        width: 80%;
+    }
+
+    section#projetos div.projeto-single h3 {
+        font-size: 30px;
+        color: #351B59;
+        font-weight: 400;
+    }
+    
+    section#projetos div.projetos-links {
+        margin-top: 20px;
+        width: 100%;
+        padding: 2% 0;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .container-home .home-wrapper-1 {
+        display: none;
+    }
+
+    .container .home-wrapper-2 {
+        width: 100%;
+    }
+
+    .container-home div.texto {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-wrapper-2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#skills div.skills-details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.soft-skills-wrapper1 {
+        width: 247.31px ;
+    }
+
+    section#skills div.hard-skills-wrapper1, section#skills div.soft-skills-wrapper1, section#skills div.hard-skills-wrapper2, section#skills div.soft-skills-wrapper2 { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 885px) {
+    .mosaico-single {
+        float: left;
+        width: calc(100% / 5);
+    }
+
+    .mosaico-single:nth-of-type(6), .mosaico-single:nth-of-type(7), .mosaico-single:nth-of-type(8), .mosaico-single:nth-of-type(9) {
+        display: none;
+    }
+
+    .nav-padrao {
+        display: none;
+    }
+
+    .container-home div.btn-links {
+        width: 80%;
+        margin-left: -48.52px;
+        margin-bottom: 2%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
