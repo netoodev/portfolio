@@ -290,7 +290,7 @@ section#sobre div.sobre-container h2, section#skills div.skills-container h2, se
 
 .container-mosaico {
     width: 104%;
-    margin-left: -2.5%;
+    margin-left: -2%;
 }
 
 .mosaico-single {
@@ -302,7 +302,7 @@ section#sobre div.sobre-container h2, section#skills div.skills-container h2, se
     width: 100%;
     padding-top: 100%;
     background-color: #ccc;
-    border: 5px solid #fff;
+    border: 5px solid #fafafa;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
