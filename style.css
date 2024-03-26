@@ -843,4 +843,8 @@ footer div a {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .seta-home, .seta-sobre, .seta-skills,  .seta-projetos{
+        display: none !important; 
+    }
 }
