@@ -284,8 +284,13 @@ section#sobre div.sobre-container h2, section#skills div.skills-container h2, se
 /******/
 
 section#sobre div.sobre-texto-wrapper {
-    width: 70%;
+    width: 80%;
+    max-width: 700px;
     margin: 3% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 section#sobre div.sobre-texto {
@@ -293,39 +298,13 @@ section#sobre div.sobre-texto {
     padding: 20px 0;
     color: #351B59;
     text-align: justify;
-    display: flex;
-    justify-content: left;
 }
 
 section#sobre div.sobre-texto p {
-    width: 500px;
-}
-
-section#sobre div.sobre-texto2 {
     width: 100%;
-    padding: 20px 0;
-    color: #351B59;
-    text-align: justify;
-    display: flex;
-    justify-content: right;
+    margin: 0 auto;
 }
 
-section#sobre div.sobre-texto2 p {
-    width: 500px;
-}
-
-section#sobre div.sobre-texto3 {
-    width: 100%;
-    padding: 20px 0;
-    color: #351B59;
-    text-align: justify;
-    display: flex;
-    justify-content: left;
-}
-
-section#sobre div.sobre-texto3 p {
-    width: 500px;
-}
 
 section#sobre div.seta-sobre {
     width: 100%;
@@ -659,21 +638,6 @@ footer div a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1500px) {
-
-    section#sobre div.sobre-texto, section#sobre div.sobre-texto2, section#sobre div.sobre-texto3 {
-        width: 100%;
-        justify-content: center;
-    }
-
-    section#sobre div.sobre-texto p, section#sobre div.sobre-texto2 p, section#sobre div.sobre-texto3 p {
-        width: 100%;
-    }
-
-    section#sobre div.sobre-texto3 {
-        padding-bottom: 7%;
-    }
-}
 
 @media screen and (max-width: 1370px) {
     section#skills div.skills-blocks-container {
