@@ -745,7 +745,7 @@ footer div a {
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .container-home .home-wrapper-1 {
         display: none;
     }
@@ -784,7 +784,6 @@ footer div a {
         width: 100%;
         padding: 20px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
